@@ -10,21 +10,21 @@
         <th>ステータス</th>
       </tr>
     </thead>
-  <tbody>
+    <tbody>
 
 <% @tasks.each do |task| %>
 
-    <tr>
-      <td>
+      <tr>
+        <td>
 <%= link_to task.id, task %>
-      </td>
-      <td>
+        </td>
+        <td>
 <%= task.content %>        
-      </td>
-      <td>
+        </td>
+        <td>
 <%= task.status %>
-      </td>
-    </tr>
+        </td>
+      </tr>
 
 <% end %>
 
